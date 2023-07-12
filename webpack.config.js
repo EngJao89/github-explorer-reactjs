@@ -16,8 +16,8 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   devServer: {
+    static: path.join(__dirname, 'public/'),
     port: 3000,
-    contentBase: path.resolve(__dirname, 'public'),
     hot: true,
   },
   plugins: [
